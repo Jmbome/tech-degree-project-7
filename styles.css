@@ -2,6 +2,162 @@
    box-sizing:  border-box;
 }
 .one{
+    width: max-content;
+    background-color:aqua;
+    display:grid;
+    grid-template-columns: auto  200px 400px 200px 200px;
+
+}
+
+#title{
+    margin-left: 20px;
+}
+
+.supscript{
+    font-size: 10px;
+}
+
+.bell-icon{
+    width:23%;
+    margin-top: 18px;
+    margin-left: 39em;     
+}
+
+
+hr{
+    width:13%;
+    margin:auto;
+    margin-left: 30em;
+    margin-top: 10%;
+    transform: rotate(90deg);
+   border:.5px solid black;
+}
+#name_tag{
+    margin-left: 35px;
+}
+
+
+.bell-icon:hover{
+    transform:scale(1.1);
+    stroke: coral;
+}
+
+
+.profile-pic{
+   max-width:34%;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 73%;
+}
+
+
+.main-header{
+    display:grid;
+    grid-template-columns: 340px 100px ;
+    height: 30vh;
+    
+    
+}
+.headline{
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.main-header-search{
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 140vh;
+    grid-gap: 10px;
+    margin-top: 48px;
+}
+
+input{
+    width: 112vh;
+    height: 14vh;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+button{
+    margin-bottom: 43px;
+    font-size: 40px;
+    background-color:goldenrod;
+}
+
+input::placeholder{
+    font-size: 50px;
+}
+
+/*Nav buttons styling*/
+
+.nav-button{
+    width: 203vh;
+    height: 35vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color:rgb(144, 180, 211);
+    grid-gap:10px;
+    grid-template-areas: "btn" "btn2" "btn3" "btn4";
+
+}
+
+.nav-btn1{
+ grid-area: 'btn1';
+ margin: 10px 50px 10px 50px;
+
+}
+
+.nav-btn2{
+grid-area: 'btn2';
+margin: 10px 50px 10px 50px;
+
+}
+
+.nav-btn3{
+    grid-area: 'btn3';
+    margin: 10px 50px 10px 50px;
+}
+
+.nav-btn4{
+    grid-area: 'btn4';
+    margin: 10px 50px 10px 50px;
+
+}
+
+
+/*chart styling */
+
+.chart-container{
+    width: 100vh;
+    height: 200vh;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:'traffic' 'daily' 'mobile';
+
+}
+
+.traffic{
+    grid-area: 'traffic';
+}
+
+.daily{
+    grid-area: 'daily';
+}
+
+.mobile{
+    grid-area: 'mobile';
+
+}
+
+
+
+
+
+/* @media query Maxwidth 1024*/
+
+
+/* 
+.one{
     background-color:aqua;
     display:grid;
     grid-template-columns: auto  200px 400px 200px 200px;
@@ -54,7 +210,7 @@ hr{
 
 /*Nav buttons styling*/
 
-.nav-button{
+/* .nav-button{
     width: 6%;
     display:grid;
     grid-template-rows: 80px 60px 60px 600px;
@@ -81,10 +237,10 @@ hr{
 
 /*chart styling*/
 
-.chart-container{
+/* .chart-container{
     display:grid;
     grid-template-rows: 200px 20px 20px;
     height: 50px;
     width: auto;
     margin-left: 8%;
-}
+} */ 

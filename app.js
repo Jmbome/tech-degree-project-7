@@ -1,4 +1,4 @@
-var ctx = document.getElementById('myChart1').getContext('2d');
+var ctx = document.getElementById('traffic-chart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
@@ -16,12 +16,12 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
-        
+        responsive:true;
     
     }
 });
 
-var ctx = document.getElementById('myChart2').getContext('2d');
+var ctx = document.getElementById('daily-chart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'bar',
@@ -44,7 +44,7 @@ var chart = new Chart(ctx, {
     }
 });
 
-var ctx = document.getElementById('myChart3').getContext('2d');
+var ctx = document.getElementById('mobile-chart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'doughnut',
@@ -65,4 +65,4 @@ var chart = new Chart(ctx, {
         
     
     }
-});
+}); 
