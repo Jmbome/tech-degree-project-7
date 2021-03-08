@@ -1,39 +1,71 @@
 *{
    box-sizing:  border-box;
 }
+
+
+.grid-container{
+    height:100vh;
+    display:grid;
+    grid-template-rows: 80vh 100vh 100vh 100vh;
+    grid-template-areas: 'header' 'nav' 'main' 'footer';
+}
+
+header{
+    grid-area:'header';
+}
+
+nav{
+    grid-area:'nav';
+}
+
+main{
+    grid-area:'main';
+}
+
+footer{
+    grid-area:'footer';
+}
+
+
+
 .one{
     width: max-content;
+    height: 30vh;
     background-color:aqua;
     display:grid;
-    grid-template-columns: auto  200px 400px 200px 200px;
+    grid-template-columns: auto  200px 259px 200px 200px;
 
 }
 
 #title{
     margin-left: 20px;
+    font-size: 60px;
 }
 
 .supscript{
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .bell-icon{
-    width:23%;
-    margin-top: 18px;
-    margin-left: 39em;     
+    width:50%;
+    margin-top: 30px;
+    margin-left: 13em;     
 }
 
 
 hr{
-    width:13%;
+    width:30%;
     margin:auto;
-    margin-left: 30em;
-    margin-top: 10%;
+    margin-left: 8em;
+    margin-top: 28%;
     transform: rotate(90deg);
    border:.5px solid black;
 }
 #name_tag{
-    margin-left: 35px;
+    margin-left: 1px;
+    font-size: 40px;
+    white-space: nowrap;
+    padding-left:0px;
 }
 
 
@@ -44,10 +76,10 @@ hr{
 
 
 .profile-pic{
-   max-width:34%;
+   max-width:75%;
     border-radius: 50%;
-    margin-top: 5px;
-    margin-left: 73%;
+    margin-top: 15px;
+    margin-left: 1%;
 }
 
 
@@ -129,9 +161,9 @@ margin: 10px 50px 10px 50px;
 
 .chart-container{
     width: 100vh;
-    height: 200vh;
+    height: 300vh;
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
     grid-template-areas:'traffic' 'daily' 'mobile';
 
 }
