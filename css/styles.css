@@ -1,0 +1,444 @@
+*{
+   box-sizing:  border-box;
+}
+
+
+.one{
+    
+    background-color:aqua;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 10vh;
+
+}
+
+#title{
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.supscript{
+    font-size: 8px;
+}
+
+.bell-icon{
+   width: 1.5em;  
+   margin-left: 10px;  
+}
+
+
+.hr1{
+    width:10%;
+    margin:auto;
+    transform: rotate(90deg);
+   border:.5px solid black;
+}
+#name_tag{
+
+    font-size: 15px;
+    white-space: nowrap;
+    margin-right: 10px;
+
+}
+
+
+.bell-icon:hover{
+    transform:scale(1.1);
+    stroke: coral;
+}
+
+
+.profile-pic{
+   max-width:12%;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+
+/*Nav buttons styling*/
+
+.nav-button{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: stretch;
+
+    background-color:rgb(144, 180, 211);
+
+}
+
+.nav-btn1{
+width: 2em;
+margin:10px 20px 10px 28px;
+}
+
+.nav-btn2{
+width: 2em;
+margin:10px 20px 10px 20px;
+
+
+}
+
+.nav-btn3{
+    width: 2em;
+    margin:10px 20px 10px 20px;
+
+}
+
+.nav-btn4{
+    width: 2em;
+    margin:10px 20px 10px 20px;
+
+}
+
+/*dashboard search bar styling*/
+
+.main-header{
+    display:flex;
+    flex-direction: row;
+       
+}
+.headline{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.main-header-search{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:row;
+    margin-left: 9px;
+}
+
+input{
+    border-radius: 8px;
+    height: 5vh;
+    border: 2px solid black;
+    margin-right: 5px;
+}
+button{
+ background-color:rgb(144, 180, 211);
+ height: 28px;
+ border-radius: 8px;
+ color: white;
+}
+
+
+
+/*chart styling */
+
+
+.traffic-nav{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none
+
+}
+
+.traffic-nav-link{
+    margin-left: 20px;
+    ;
+}
+
+.traffic-nav-link-active{
+    border-radius: 5px;
+    background-color:cadetblue;
+}
+
+
+.chart-container{
+    
+    display:flex;
+flex-direction: column;  
+    font-size: 10px;
+    margin-top: 23px;
+    align-items: center;
+    
+
+}
+
+
+/*Social STATS styling*/
+
+.hr2{
+    width:70%;
+    margin-top: 20px;
+}
+
+
+.hr3{
+    width:80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.social-container{
+    width: 80%;
+    display: grid;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    grid-template-columns: 1fr 50%;
+    background-color:rgb(241, 235, 235);
+    align-items: center;
+    border-radius: 8px;
+}
+
+.social-image{
+    margin: 20px 1px 15px 45%;
+    width: 38%;
+    border-radius: 50%;
+    background-color:rgb(88, 70, 111);
+
+
+}
+
+.social-text1{
+    font-size: 15px;
+    display: grid;
+    grid-template-rows: 11px 15px;
+    margin-bottom: 3%;
+}
+
+
+.social-text2{
+    font-size: 15px;
+    display: grid;
+    grid-template-rows: 11px 15px;
+    margin-bottom: 30%;
+}
+
+
+.social-text3{
+    font-size: 15px;
+    display: grid;
+    grid-template-rows: 11px 15px;
+    margin-bottom: 30%;
+}
+
+.letter{
+    margin-top: 16%;
+}
+
+.num{
+    font-size: 20px;
+}
+
+#Layer_1{
+  margin: 15px 2px 1px 10px;
+}
+
+
+/*New member Styling*/
+
+.members-text{
+ margin-left: 20px;
+}
+
+
+.profile-image{
+    width: 60%;
+    border-radius: 50%;
+    margin-left: 30px;
+
+}
+
+.members-text{
+    font-size: 11px;
+}
+
+.p1-1{
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+
+.p2{
+    margin-left: 30%;
+    font-size: 13px;
+}
+
+.p2-1{
+    margin-left: 37%;
+    font-size: 13px;
+}
+
+/*Recent Activity styling */
+
+.active-h{
+    margin-left: 70px;
+}
+
+
+.active-p{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+.active-p2{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 28px;
+
+}
+
+.active-h2{
+  margin-left: 40%;
+}
+
+.profile-image2{
+    width: 38%;
+    border-radius: 50%;
+    margin-left: 90px;
+
+}
+
+.active-h3{
+    margin-left: 85px;
+
+  }
+
+  .p1-2{
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.active-section{
+    margin-right: 20px;
+}
+
+/*Message User styling */
+
+.message-h{
+    margin-left: 88px;
+}
+
+.widget-container{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+/*Setting styling*/
+#timezone{
+    height: 35px;
+    margin:20px 6px 10px 6px;
+    border-radius: 8px;
+}
+
+.settings-button{
+    margin-left: 17px;
+    margin-bottom: 20px;
+}
+
+#save{
+    width: 45%;
+}
+
+#cancel{
+    width: 45%;
+}
+
+
+/* @media query Maxwidth 1024*/
+
+
+/* 
+.one{
+    background-color:aqua;
+    display:grid;
+    grid-template-columns: auto  200px 400px 200px 200px;
+
+}
+
+#title{
+    margin-left: 20px;
+}
+
+.supscript{
+    font-size: 10px;
+}
+
+.bell-icon{
+    width:23%;
+    margin-top: 18px;
+    margin-left: 39em;     
+}
+
+
+hr{
+    width:13%;
+    margin:auto;
+    margin-left: 30em;
+    margin-top: 10%;
+    transform: rotate(90deg);
+   border:.5px solid black;
+}
+#name_tag{
+    margin-left: 35px;
+}
+
+
+.bell-icon:hover{
+    transform:scale(1.1);
+    stroke: coral;
+}
+
+
+.profile-pic{
+   max-width:34%;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 73%;
+}
+
+
+
+
+/*Nav buttons styling*/
+
+/* .nav-button{
+    width: 6%;
+    display:grid;
+    grid-template-rows: 80px 60px 60px 600px;
+    background-color:rgb(144, 180, 211);
+
+}
+
+.nav-btn1{
+    margin: 20px 20px 0px 25px;
+    width:35%;
+}
+.nav-btn2{
+    margin: 0px 20px 0px 25px;
+    width:35%;
+}
+.nav-btn3{
+    margin: 5px 20px 1px 25px;
+    width:35%;
+}
+.nav-btn4{
+    margin: 5px 20px 5px 25px;
+    width:35%;
+}
+
+/*chart styling*/
+
+/* .chart-container{
+    display:grid;
+    grid-template-rows: 200px 20px 20px;
+    height: 50px;
+    width: auto;
+    margin-left: 8%;
+} */ 

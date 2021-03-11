@@ -1,0 +1,49 @@
+
+ /*Setting styling */
+
+
+ .settings{
+    display: flex;
+    flex-direction: column;
+}
+
+.switch-light {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+
+}
+
+.first-span1{
+    margin-left: 35px;
+    width: 20%;
+    margin-top: 1px;
+
+}
+
+.switch-light a{
+    border-radius: 50%;
+
+}
+
+.first-span1 span{
+    background-color:rgb(174, 200, 220);
+
+}
+
+.first-span2 span{
+    background-color:rgb(174, 200, 220);
+
+}
+
+
+.first-span2{
+   margin-left: 67.5px;
+   width: 20%;
+}
+
+strong{
+   margin-top: 8px;
+}
+
+

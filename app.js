@@ -1,16 +1,19 @@
 var ctx = document.getElementById('traffic-chart').getContext('2d');
+
+
+
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['16-22','23-29', '30-5', '6-12', '13-19', '20-26', '27-3','4-10','11-17','18-24','25-31'],
         datasets: [{
             label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            backgroundColor: 'rgb(144, 180, 211)',
+            borderColor: 'aqua',
+            data: [ 550,1200,1000,2000,1500,1800,1300,1900,2200,1500,2500,]
         }]
     },
 
@@ -27,12 +30,12 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
         datasets: [{
             label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            backgroundColor: 'rgb(144, 180, 211)',
+            borderColor: 'aqua',
+            data: [80,112,160,120,220,200,85,0 ]
         }]
     },
 
@@ -50,17 +53,21 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['Desktop','Tablet','Phones'],
         datasets: [{
             label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            backgroundColor: ['rgb(144, 180, 211)','blue','green'],
+            borderColor: 'aqua',
+            data: [80,10,10]
+        
         }]
     },
 
     // Configuration options go here
     options: {
+    legend:{
+        position:'right',
+    }
         
     
     }
