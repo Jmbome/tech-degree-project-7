@@ -3,7 +3,7 @@
 }
 
 
-.one{
+ /* .one{
     
     background-color:aqua;
     display:flex;
@@ -13,7 +13,7 @@
     border-top-right-radius: 8px;
     height: 10vh;
 
-}
+} 
 
 #title{
     margin-left: 10px;
@@ -55,12 +55,12 @@
    max-width:12%;
     border-radius: 50%;
     margin-right: 14px;
-}
+} */
 
 
 /*Nav buttons styling*/
 
-.nav-button{
+/* .nav-button{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -92,11 +92,11 @@ margin:10px 20px 10px 20px;
     width: 2em;
     margin:10px 20px 10px 20px;
 
-}
+} *
 
 /*dashboard search bar styling*/
 
-.main-header{
+ /* .main-header{
     display:flex;
     flex-direction: row;
        
@@ -124,14 +124,14 @@ button{
  height: 28px;
  border-radius: 8px;
  color: white;
-}
+}   */
 
 
 
 /*chart styling */
 
-
-.traffic-nav{
+/* 
+ .traffic-nav{
     display:flex;
     flex-direction: row;
     list-style-type: none
@@ -158,12 +158,12 @@ flex-direction: column;
     align-items: center;
     
 
-}
+} 
 
 
 /*Social STATS styling*/
 
-.hr2{
+/* .hr2{
     width:70%;
     margin-top: 20px;
 }
@@ -217,7 +217,7 @@ flex-direction: column;
     display: grid;
     grid-template-rows: 11px 15px;
     margin-bottom: 30%;
-}
+} 
 
 .letter{
     margin-top: 16%;
@@ -229,12 +229,12 @@ flex-direction: column;
 
 #Layer_1{
   margin: 15px 2px 1px 10px;
-}
+}   */
 
 
 /*New member Styling*/
 
-.members-text{
+ /* .members-text{
  margin-left: 20px;
 }
 
@@ -264,11 +264,11 @@ flex-direction: column;
 .p2-1{
     margin-left: 37%;
     font-size: 13px;
-}
+}  */ 
 
 /*Recent Activity styling */
 
-.active-h{
+ /* .active-h{
     margin-left: 70px;
 }
 
@@ -309,11 +309,11 @@ flex-direction: column;
 
 .active-section{
     margin-right: 20px;
-}
+}  */
 
 /*Message User styling */
-
-.message-h{
+/* 
+ .message-h{
     margin-left: 88px;
 }
 
@@ -328,10 +328,11 @@ textarea{
     margin-bottom: 10px;
     border: 2px solid black;
     border-radius: 8px;
-}
+} 
 
 /*Setting styling*/
-#timezone{
+
+ /* #timezone{
     height: 35px;
     margin:20px 6px 10px 6px;
     border-radius: 8px;
@@ -348,97 +349,1015 @@ textarea{
 
 #cancel{
     width: 45%;
+} 
+  */
+
+
+
+/* @media query Minwidth 768*/
+
+@media(min-width:768px){
+    
+ 
+    h2{
+        font-size: 15px;
+    }
+
+
+       body{
+           max-width: 1023px;
+        display: grid;
+        grid-template-columns: 100px 650px;
+        grid-template-areas:
+        " title-one title-one" 
+        "nav"
+        "nav";
+        }
+
+
+
+    main{
+        grid-area: 'main';
+        margin-top: 12.9%;
+        height: 30%;
+    }
+
+    footer{
+        grid-area: 'footer';
+        width: 600%;
+        margin-left: 100%;
+    }
+
+    .nav-button{
+        grid-area: 'nav';
+        height: 115%;
+        width: 72%;
+    }
+
+    .one{
+        grid-area: 'title-one';
+    }
+
+
+
+
+    .one{
+    
+        background-color:aqua;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        width: 750%;
+        height: 80px;
+    
+    } 
+    
+    #title{
+        margin-left: 10px;
+        font-size: 17px;
+    }
+    
+    .supscript{
+        font-size: 8px;
+    }
+    
+    .bell-icon{
+       width: 1.5em;  
+
+    }
+    
+    #Layer_1{
+        margin: 15px 2px 1px 420px;
+      } 
+    
+    .hr1{
+        width:8%;
+        margin:auto;
+        transform: rotate(90deg);
+       border:.5px solid black;
+    }
+
+
+    #name_tag{
+    
+        font-size: 15px;
+        white-space: nowrap;
+        margin-right: 10px;
+    
+    }
+    
+    
+    .bell-icon:hover{
+        transform:scale(1.1);
+        stroke: coral;
+    }
+    
+    
+    .profile-pic{
+       max-width:9%;
+        border-radius: 50%;
+        margin-right: 14px;
+    }
+    
+    
+    /*Nav buttons styling*/
+    
+    .nav-button{
+        display:grid;
+        flex-direction: row;
+        grid-template-rows:80px 80px 80px 80px ;
+        background-color:rgb(144, 180, 211);
+        height: 122.6%;
+    
+    }
+    
+    .nav-btn1{
+    width: 2em;
+    margin:10px 20px 10px 17px;
+    }
+    
+    .nav-btn2{
+    width: 2em;
+    margin:10px 20px 10px 17px;
+    
+    
+    }
+    
+    .nav-btn3{
+        width: 2em;
+        margin:10px 20px 10px 17px;
+    
+    }
+    
+    .nav-btn4{
+        width: 2em;
+        margin:10px 20px 10px 18px;
+    
+    } *
+    
+    /*dashboard search bar styling*/
+    
+     .main-header{
+        display:flex;
+        flex-direction: row;  
+        
+       
+    }
+
+
+    .headline{
+        font-size: 15px;
+        margin-top: 38px;
+    }
+    
+    .main-header-search{
+        margin-top: 20px;
+        display:flex;
+        flex-direction:row;
+        margin-left: 9px;
+        
+    }
+    
+    input{
+        border-radius: 8px;
+        height: 5vh;
+        border: 2px solid black;
+        margin-right: 5px;
+        width: 48vh;
+        margin-bottom: 25px;
+    }
+
+    button{
+     background-color:rgb(144, 180, 211);
+     height: 28px;
+     border-radius: 8px;
+     color: white;
+     margin-top: 10px;
+    } 
+    
+    
+    
+    /*chart styling */
+    
+    #traffic-chart{
+        width: 200%;
+    }
+    
+     .traffic-nav{
+        display:flex;
+        flex-direction: row;
+        list-style-type: none
+    
+    }
+    
+    .traffic-nav-link{
+        margin-left: 20px;
+        
+    }
+    
+    .traffic-nav-link-active{
+        border-radius: 5px;
+        background-color:cadetblue;
+    }
+    
+    
+    .chart-container{
+        display:flex;
+    flex-direction: column;  
+        font-size: 10px;
+        margin-top: 25px;
+        align-items: center;        
+    
+    } 
+
+    .two-charts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    
+    }
+
+    .widget-container-half{
+        width: 100%;
+    }
+
+    #daily-chart{
+        border-right: 2px solid black;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .hr2{
+        display: none;
+    }
+    
+    /*Social STATS styling*/
+
+    
+    .main-section-container{
+        display: flex;
+        flex-direction: row;
+        margin-right: 28px;
+        border-bottom: 2px solid black;
+        margin-bottom: 10px;
+    }
+
+    
+    
+    .hr2{
+        width:70%;
+        margin-top: 20px;
+    }
+    
+    
+    .hr3{
+        width:80%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    
+    .social-container{
+        width: 40%;
+        display: grid;
+        margin: 10px 1px 20px 10px;
+        grid-template-columns: 50% 50%;
+        background-color:rgb(241, 235, 235);
+        align-items: center;
+        border-radius: 8px;
+    }
+    
+    .social-image{
+        width: 70%;
+        border-radius: 50%;
+        background-color:rgb(88, 70, 111);
+        margin-left: 20px;
+
+    }
+
+    .Layer_2{
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 14px;
+    }
+
+     
+    
+    .social-text1{
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 11px 15px;
+        margin-bottom: 3%;
+    }
+    
+    
+    .social-text2{
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 11px 15px;
+        margin-bottom: 30%;
+    }
+    
+    
+    .social-text3{
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 11px 15px;
+        margin-bottom: 30%;
+    }
+    
+    .letter{
+        margin-top: 16%;
+    }
+    
+    .num{
+        font-size: 20px;
+    }
+    
+    
+    
+    
+    /*New member Styling*/
+
+    .members{
+        border-bottom: 2px solid grey;
+    }
+    
+    .members-container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+
+    }
+
+
+     .members-text{
+     margin-left: 20px;
+     margin-top: 30px;
+    }
+    
+    
+    .profile-image{
+        width: 18%;
+        border-radius: 50%;
+        margin-left: 30px;
+    
+    }
+    
+    .members-text{
+        font-size: 13px;
+    }
+    
+    .p1-1{
+        font-size: 14px;
+        margin-left: 12px;
+        margin-bottom: 1px;
+    }
+    
+    
+    .p2{
+        margin-left: 20%;
+        font-size: 13px;
+        margin-top: 50px;
+    }
+    
+    .p2-1{
+        margin-left: 10px;
+        font-size: 17px;
+        margin-top: 1px;
+
+    } 
+    
+    /*Recent Activity styling */
+
+    .active-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .group-text{
+        display:flex;
+        flex-direction: column;
+    }
+
+     .active-text{
+         display: flex;
+         flex-direction: row;
+        
+
+     }
+
+    
+    
+    .active-p{
+        font-size: 16px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-top: 40px;
+        margin-left:10px;
+    }
+
+
+    .active-p2{
+       font-size: 14px;
+       font-weight: bold;
+       margin-top: 40px;
+       margin-left: 12px;
+    }
+    
+
+    .active-h2{
+        white-space: nowrap;
+        margin-top: 37px;
+        margin-left: 5px;
+    
+    }
+    
+    .profile-image2{
+        width: 19%;
+        border-radius: 50%;
+        margin-left: 20px;
+    
+    }
+    
+    .active-h3{
+        margin-top: 35px;
+        margin-left: 6px;
+    
+      }
+    
+      .p1-2{
+        font-size: 14px;
+        margin-left: 25px;
+        margin-bottom: 1px;
+    }
+    
+    .active-section{
+        margin-right: 20px;
+        border-bottom: 2px solid grey;
+        margin-bottom: 10px;
+    } 
+    
+    /*Message User styling */
+    
+     .message-h{
+        margin-left: 4px;
+    }
+
+    input#userField.form-field{
+        width: 100%;
+    }
+    
+    button#send.button-primary{
+        height: 60px;
+    }
+
+    .widget-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    textarea{
+        height: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+        border-radius: 8px;
+    } 
+    
+    /*Setting styling*/
+    
+     #timezone{
+        height: 50px;
+        margin:20px 6px 10px 6px;
+        border-radius: 8px;
+    }
+    
+    .settings-button{
+        margin-left: 38px;
+        margin-bottom: 20px;
+    }
+    
+    #save{
+        width: 45%;
+        height: 48px;
+    }
+    
+    #cancel{
+        width: 45%;
+        height: 48px;
+    } 
+
+
+
 }
 
 
-/* @media query Maxwidth 1024*/
+
+/*@media query minwidth 1024 */
+/*                          */
+/*                         */
+
+@media(min-width:1024px){
 
 
-/* 
-.one{
-    background-color:aqua;
-    display:grid;
-    grid-template-columns: auto  200px 400px 200px 200px;
+    body {
+
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 100px 900px;
+    }
+
+    .one{
+       width: 1005%;
+       height: 106px;
+    
+    }
+
+ 
+    #title{
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    
+    .supscript{
+        font-size: 15px;
+    }
+    
+    .bell-icon{
+       width: 4em;  
+
+    }
+    
+    #Layer_1{
+        margin: 15px 2px 1px 420px;
+      } 
+    
+    .hr1{
+        width:8%;
+        margin-left: 1px;
+        transform: rotate(90deg);
+       border:.5px solid black;
+    }
+
+
+    #name_tag{
+    
+        font-size: 28px;
+        white-space: nowrap;
+        margin-right: 14px;
+    
+    }
+    
+    
+    .bell-icon:hover{
+        transform:scale(1.1);
+        stroke: coral;
+    }
+    
+    
+    .profile-pic{
+       max-width:9%;
+        border-radius: 50%;
+        margin-right: 4%;
+        
+    }
+    
+    
+    /*Nav buttons styling*/
+    
+    .nav-button{
+        display:grid;
+        flex-direction: row;
+        grid-template-rows:80px 80px 80px 80px ;
+        background-color:rgb(144, 180, 211);
+        height: 122.6%;
+    
+    }
+    
+    .nav-btn1{
+    width: 2em;
+    margin:10px 20px 10px 17px;
+    }
+    
+    .nav-btn2{
+    width: 2em;
+    margin:10px 20px 10px 17px;
+    
+    
+    }
+    
+    .nav-btn3{
+        width: 2em;
+        margin:10px 20px 10px 17px;
+    
+    }
+    
+    .nav-btn4{
+        width: 2em;
+        margin:10px 20px 10px 18px;
+    
+    } *
+    
+    /*dashboard search bar styling*/
+    
+     .main-header{
+        display:flex;
+        flex-direction: row;  
+        
+       
+    }
+
+
+    .headline{
+        font-size: 30px;
+        margin-top: 49px;
+    }
+    
+    .main-header-search{
+        margin-top: 35px;
+        display:flex;
+        flex-direction:row;
+        margin-left: 9px;
+        
+    }
+    
+    input{
+        border-radius: 8px;
+        height: 5vh;
+        border: 2px solid black;
+        margin-right: 5px;
+        width: 48vh;
+        margin-bottom: 25px;
+    }
+
+    button{
+     background-color:rgb(144, 180, 211);
+     height: 40px;
+     border-radius: 8px;
+     color: white;
+     margin-top: 10px;
+     font-size: 25px;
+    } 
+    
+    #alert{
+        font-size: 40px;
+    }
+    
+    
+    /*chart styling */
+    
+    #traffic-chart{
+        width: 200%;
+    }
+    
+     .traffic-nav{
+        display:flex;
+        flex-direction: row;
+        list-style-type: none
+    
+    }
+    
+    .traffic-nav-link{
+        margin-left: 20px;
+        
+    }
+    
+    .traffic-nav-link-active{
+        border-radius: 5px;
+        background-color:cadetblue;
+    }
+    
+    
+    .chart-container{
+        display:flex;
+    flex-direction: column;  
+        font-size: 25px;
+        margin-top: 25px;
+        align-items: center;        
+    
+    } 
+
+    .two-charts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    
+    }
+
+    .widget-container-half{
+        width: 100%;
+    }
+
+    #daily-chart{
+        border-right: 2px solid black;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 300px;
+    
+    }
+
+    .hr2{
+        display: none;
+    }
+    
+    /*Social STATS styling*/
+
+    
+    .main-section-container{
+        display: flex;
+        flex-direction: row;
+        margin-right: 28px;
+        border-bottom: 2px solid black;
+        margin-bottom: 10px;
+        width: 86%;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+    
+    .hr2{
+        width:70%;
+        margin-top: 20px;
+    }
+    
+    
+    .hr3{
+        width:80%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    
+    .social-container{
+        width: 40%;
+        display: grid;
+        margin: 10px 1px 20px 10px;
+        grid-template-columns: 50% 50%;
+        background-color:rgb(241, 235, 235);
+        align-items: center;
+        border-radius: 8px;
+    }
+    
+    .social-image{
+        width: 70%;
+        border-radius: 50%;
+        background-color:rgb(88, 70, 111);
+        margin-left: 20px;
+
+    }
+
+    .Layer_2{
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 14px;
+    }
+
+      
+    
+    .social-text1{
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 11px 15px;
+        margin-bottom: 3%;
+    }
+    
+    
+    .social-text2{
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 11px 15px;
+        margin-bottom: 30%;
+    }
+    
+    
+    .social-text3{
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: 11px 15px;
+        margin-bottom: 30%;
+    }
+    
+    .letter{
+        margin-top: 16%;
+    }
+    
+    .num{
+        font-size: 20px;
+    }
+    
+    
+    
+    
+    /*New member Styling*/
+
+    .members{
+        border-bottom: 2px solid grey;
+    }
+    
+    .members-container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+
+    }
+
+
+   a{
+       font-size: 20px;
+   }
+
+     .members-text{
+     margin-left: 20px;
+     margin-top: 30px;
+
+    }
+    
+    
+    .profile-image{
+        width: 18%;
+        border-radius: 50%;
+        margin-left: 30px;
+    
+    }
+    
+    .members-text{
+        font-size: 13px;
+    }
+    
+    .p1-1{
+        font-size: 30px;
+        margin-left: 12px;
+        margin-bottom: 1px;
+    }
+    
+    
+    .p2{
+        margin-left: 20%;
+        font-size: 30px;
+        margin-top: 60px;
+    }
+    
+    .p2-1{
+        margin-left: 10px;
+        font-size: 30px;
+        margin-top: 1px;
+
+    } 
+    
+    /*Recent Activity styling */
+
+    .active-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .group-text{
+        display:flex;
+        flex-direction: column;
+    }
+
+     .active-text{
+         display: flex;
+         flex-direction: row;
+        
+
+     }
+
+    
+    
+    .active-p{
+        font-size: 28px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-top: 40px;
+        margin-left:10px;
+    }
+
+
+    .active-p2{
+       font-size: 28px;
+       font-weight: bold;
+       margin-top: 40px;
+       margin-left: 12px;
+    }
+    
+
+    .active-h2{
+        white-space: nowrap;
+        margin-top: 37px;
+        margin-left: 5px;
+        font-size: 30px;
+    
+    }
+    
+    .profile-image2{
+        width: 19%;
+        border-radius: 50%;
+        margin-left: 20px;
+    
+    }
+    
+    .active-h3{
+        margin-top: 42px;
+        margin-left: 6px;
+        font-size: 25px;
+    
+      }
+    
+      .p1-2{
+        font-size: 30px;
+        margin-left: 25px;
+        margin-bottom: 1px;
+    }
+    
+    .active-section{
+        margin-right: 20px;
+        border-bottom: 2px solid grey;
+        margin-bottom: 10px;
+    } 
+    
+    /*Message User styling */
+    
+     .message-h{
+        margin-left: 4px;
+        font-size: 30px;
+    }
+
+    input#userField.form-field{
+        width: 100%;
+    }
+    
+    button#send.button-primary{
+        height: 60px;
+    }
+
+    .widget-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    textarea{
+        height: 80px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+        border-radius: 8px;
+    } 
+    
+
+     .all-activities{
+         width: 50%;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+        
+     }
+
+
+    /*Setting styling*/
+    
+    .switch-light {
+        font-size: 20px;
+    }
+
+ textarea{
+     height: 200px;
+ }
+
+    h3{
+        font-size: 30px;
+    }
+
+
+     #timezone{
+        height: 50px;
+        margin:20px 6px 10px 6px;
+        border-radius: 8px;
+    }
+    
+    .settings-button{
+        margin-left: 38px;
+        margin-bottom: 20px;
+    }
+    
+    #save{
+        width: 45%;
+        height: 48px;
+    }
+    
+    #cancel{
+        width: 45%;
+        height: 48px;
+    } 
+
+
 
 }
-
-#title{
-    margin-left: 20px;
-}
-
-.supscript{
-    font-size: 10px;
-}
-
-.bell-icon{
-    width:23%;
-    margin-top: 18px;
-    margin-left: 39em;     
-}
-
-
-hr{
-    width:13%;
-    margin:auto;
-    margin-left: 30em;
-    margin-top: 10%;
-    transform: rotate(90deg);
-   border:.5px solid black;
-}
-#name_tag{
-    margin-left: 35px;
-}
-
-
-.bell-icon:hover{
-    transform:scale(1.1);
-    stroke: coral;
-}
-
-
-.profile-pic{
-   max-width:34%;
-    border-radius: 50%;
-    margin-top: 5px;
-    margin-left: 73%;
-}
-
-
-
-
-/*Nav buttons styling*/
-
-/* .nav-button{
-    width: 6%;
-    display:grid;
-    grid-template-rows: 80px 60px 60px 600px;
-    background-color:rgb(144, 180, 211);
-
-}
-
-.nav-btn1{
-    margin: 20px 20px 0px 25px;
-    width:35%;
-}
-.nav-btn2{
-    margin: 0px 20px 0px 25px;
-    width:35%;
-}
-.nav-btn3{
-    margin: 5px 20px 1px 25px;
-    width:35%;
-}
-.nav-btn4{
-    margin: 5px 20px 5px 25px;
-    width:35%;
-}
-
-/*chart styling*/
-
-/* .chart-container{
-    display:grid;
-    grid-template-rows: 200px 20px 20px;
-    height: 50px;
-    width: auto;
-    margin-left: 8%;
-} */ 

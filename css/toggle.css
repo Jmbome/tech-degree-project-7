@@ -7,6 +7,11 @@
     flex-direction: column;
 }
 
+
+span on {
+    margin-left: 10px;
+}
+
 .switch-light {
     display: flex;
     flex-direction: row;
