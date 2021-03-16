@@ -2,8 +2,10 @@
    box-sizing:  border-box;
 }
 
-
- /* .one{
+h2{
+    font-size: 15px;
+}
+  .one{
     
     background-color:aqua;
     display:flex;
@@ -25,14 +27,13 @@
 }
 
 .bell-icon{
-   width: 1.5em;  
-   margin-left: 10px;  
+   width: 1.5em;   
 }
 
 
 .hr1{
     width:10%;
-    margin:auto;
+    margin-right: 5px;
     transform: rotate(90deg);
    border:.5px solid black;
 }
@@ -54,13 +55,13 @@
 .profile-pic{
    max-width:12%;
     border-radius: 50%;
-    margin-right: 14px;
-} */
+    margin-right: 5px;
+} 
 
 
 /*Nav buttons styling*/
 
-/* .nav-button{
+ .nav-button{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -92,11 +93,11 @@ margin:10px 20px 10px 20px;
     width: 2em;
     margin:10px 20px 10px 20px;
 
-} *
+} 
 
 /*dashboard search bar styling*/
 
- /* .main-header{
+  .main-header{
     display:flex;
     flex-direction: row;
        
@@ -124,13 +125,13 @@ button{
  height: 28px;
  border-radius: 8px;
  color: white;
-}   */
+}   
 
 
 
 /*chart styling */
 
-/* 
+ 
  .traffic-nav{
     display:flex;
     flex-direction: row;
@@ -153,7 +154,6 @@ button{
     
     display:flex;
 flex-direction: column;  
-    font-size: 10px;
     margin-top: 23px;
     align-items: center;
     
@@ -162,8 +162,12 @@ flex-direction: column;
 
 
 /*Social STATS styling*/
+.main-section-container{
+    margin-left: 50px;
+}
 
-/* .hr2{
+
+ .hr2{
     width:70%;
     margin-top: 20px;
 }
@@ -188,12 +192,14 @@ flex-direction: column;
 }
 
 .social-image{
-    margin: 20px 1px 15px 45%;
-    width: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color:rgb(88, 70, 111);
-
-
+    margin-left: 20px;
 }
 
 .social-text1{
@@ -225,24 +231,26 @@ flex-direction: column;
 
 .num{
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 #Layer_1{
-  margin: 15px 2px 1px 10px;
-}   */
+  margin: 15px 2px 1px 1px;
+} 
+
 
 
 /*New member Styling*/
 
- /* .members-text{
+  .members-text{
  margin-left: 20px;
 }
 
 
 .profile-image{
-    width: 60%;
+    width: 30%;
     border-radius: 50%;
-    margin-left: 30px;
+    margin-left: 90px
 
 }
 
@@ -252,25 +260,26 @@ flex-direction: column;
 
 .p1-1{
     font-size: 14px;
-    margin-left: 12px;
+    margin-left: 60px;
 }
 
+a{
+    margin-left: 45px;
+}
 
 .p2{
-    margin-left: 30%;
+    margin-left: 36%;
     font-size: 13px;
 }
 
 .p2-1{
     margin-left: 37%;
     font-size: 13px;
-}  */ 
+}   
 
 /*Recent Activity styling */
 
- /* .active-h{
-    margin-left: 70px;
-}
+
 
 
 .active-p{
@@ -287,32 +296,32 @@ flex-direction: column;
 }
 
 .active-h2{
-  margin-left: 40%;
+  margin-left: 35%;
 }
 
 .profile-image2{
-    width: 38%;
+    width: 30%;
     border-radius: 50%;
     margin-left: 90px;
 
 }
 
 .active-h3{
-    margin-left: 85px;
+    margin-left: 73px;
 
   }
 
   .p1-2{
     font-size: 14px;
-    margin-left: 25px;
+    margin-left: 80px;
 }
 
 .active-section{
     margin-right: 20px;
-}  */
+}  
 
 /*Message User styling */
-/* 
+ 
  .message-h{
     margin-left: 88px;
 }
@@ -332,7 +341,7 @@ textarea{
 
 /*Setting styling*/
 
- /* #timezone{
+  #timezone{
     height: 35px;
     margin:20px 6px 10px 6px;
     border-radius: 8px;
@@ -350,7 +359,7 @@ textarea{
 #cancel{
     width: 45%;
 } 
-  */
+  
 
 
 
@@ -469,7 +478,7 @@ textarea{
         flex-direction: row;
         grid-template-rows:80px 80px 80px 80px ;
         background-color:rgb(144, 180, 211);
-        height: 122.6%;
+        height: 127.6%;
     
     }
     
@@ -632,12 +641,17 @@ textarea{
     }
     
     .social-image{
-        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         background-color:rgb(88, 70, 111);
         margin-left: 20px;
-
     }
+
+
 
     .Layer_2{
         width: 50px;
@@ -889,7 +903,7 @@ textarea{
     }
     
     .bell-icon{
-       width: 4em;  
+       width: 3em;  
 
     }
     
@@ -935,7 +949,7 @@ textarea{
         flex-direction: row;
         grid-template-rows:80px 80px 80px 80px ;
         background-color:rgb(144, 180, 211);
-        height: 122.6%;
+        height: 113%;
     
     }
     
@@ -991,7 +1005,7 @@ textarea{
         height: 5vh;
         border: 2px solid black;
         margin-right: 5px;
-        width: 48vh;
+        width: 40vh;
         margin-bottom: 25px;
     }
 
@@ -1108,11 +1122,14 @@ textarea{
     }
     
     .social-image{
-        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         background-color:rgb(88, 70, 111);
         margin-left: 20px;
-
     }
 
     .Layer_2{
@@ -1159,9 +1176,7 @@ textarea{
     
     /*New member Styling*/
 
-    .members{
-        border-bottom: 2px solid grey;
-    }
+    
     
     .members-container{
         display: flex;
@@ -1281,15 +1296,15 @@ textarea{
     
     .active-section{
         margin-right: 20px;
-        border-bottom: 2px solid grey;
         margin-bottom: 10px;
+        border: none;
     } 
     
     /*Message User styling */
     
      .message-h{
         margin-left: 4px;
-        font-size: 30px;
+        font-size: 23px;
     }
 
     input#userField.form-field{
@@ -1314,12 +1329,23 @@ textarea{
     } 
     
 
-     .all-activities{
-         width: 50%;
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-        
-     }
+    .all-activities{
+        display: flex;
+        border-bottom: 1px solid;
+    }
+    .members,
+    .active-section {
+        flex-basis: 50%;
+    }
+    .members *,
+    .active-section *{
+        font-size: 14px;
+    }
+    .members img,
+    .active-section img {
+        width: 50px;
+        height: 50px;
+    }
 
 
     /*Setting styling*/
@@ -1329,7 +1355,7 @@ textarea{
     }
 
  textarea{
-     height: 200px;
+     height: 104px;
  }
 
     h3{
@@ -1356,8 +1382,20 @@ textarea{
     #cancel{
         width: 45%;
         height: 48px;
-    } 
+    }
+    
+    
+footer{
+    display: grid;
+grid-template-columns: 50% 90%;
+}
+   .settings{
+       margin-left: 30px;
+   }
 
+   button#send.button-primary{
+       height: 54px;
+   }
 
 
 }
