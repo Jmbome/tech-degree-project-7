@@ -19,11 +19,6 @@ body{
 
 
 
-
-
-
-
-
 h2{
     font-size: 15px;
 }
@@ -367,9 +362,9 @@ textarea{
 /*****************************/
 /****************************/
 
-/* @media query Minwidth 768*/
+/* @media query Minwidth 768 */
 
-/* @media(min-width:768px){
+@media(min-width:768px){
     
  header{
      grid-area: "head";
@@ -383,52 +378,34 @@ textarea{
      grid-area: "main";
  }
 
- footer{
-     grid-area: "foot";
- }
-
+ 
 
 
  .grid-container{
-     grid-template-columns: 102px 1fr;
+     grid-template-columns: 80px 1fr;
+     grid-template-rows: 60px 1fr;
+     grid-template-areas:
+     "head head"
+     "nav main";
  }
 
 
 
 
 
-    h2{
-        font-size: 15px;
-    }
 
 
      
 
 
 
-    main{
-        grid-area: 'main';
-        margin-top: 12.9%;
-        height: 30%;
-    }
-
-    footer{
-        grid-area: 'footer';
-        width: 600%;
-        margin-left: 100%;
-    }
-
-    .nav-button{
-        grid-area: 'nav';
-        height: 115%;
-        width: 72%;
-    }
+    
 
    
 
 
 
-
+/* 
     .one{
     
         background-color:aqua;
@@ -486,8 +463,8 @@ textarea{
        max-width:9%;
         border-radius: 50%;
         margin-right: 14px;
-    } */
-    
+    } 
+     */
     
     /*Nav buttons styling*/
     
