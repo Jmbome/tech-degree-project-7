@@ -13,7 +13,7 @@ body{
     display: grid;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 105px 600px 1fr ;
+
 }
 
 
@@ -389,21 +389,38 @@ textarea{
 
 @media(min-width:768px){
     
- 
+ header{
+     grid-area: "head";
+ }
+
+ nav{
+     grid-area: "nav";
+ }
+
+ main{
+     grid-area: "main";
+ }
+
+ footer{
+     grid-area: "foot";
+ }
+
+
+
+ .grid-container{
+     grid-template-columns: 102px 1fr;
+ }
+
+
+
+
+
     h2{
         font-size: 15px;
     }
 
 
-       body{
-           max-width: 1023px;
-        display: grid;
-        grid-template-columns: 100px 650px;
-        grid-template-areas:
-        " title-one title-one" 
-        "nav"
-        "nav";
-        }
+     
 
 
 
