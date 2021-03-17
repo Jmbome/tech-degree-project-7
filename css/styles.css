@@ -1,6 +1,27 @@
 *{
+    margin: 0;
+    padding: 0;
    box-sizing:  border-box;
 }
+
+body{
+    height: 100vh;
+}
+
+
+.grid-container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 105px 600px 1fr ;
+}
+
+
+
+
+
+
+
 
 h2{
     font-size: 15px;
@@ -361,7 +382,8 @@ textarea{
 } 
   
 
-
+/*****************************/
+/****************************/
 
 /* @media query Minwidth 768*/
 
@@ -433,13 +455,12 @@ textarea{
     }
     
     .bell-icon{
-       width: 1.5em;  
+       width: 2.5em;  
+       margin-left: 300px;
 
     }
     
-    #Layer_1{
-        margin: 15px 2px 1px 420px;
-      } 
+    
     
     .hr1{
         width:8%;
@@ -648,7 +669,7 @@ textarea{
         height: 75px;
         border-radius: 50%;
         background-color:rgb(88, 70, 111);
-        margin-left: 20px;
+        margin-left: 2px;
     }
 
 
@@ -879,8 +900,9 @@ textarea{
 @media(min-width:1024px){
 
 
-    body {
 
+
+    body {
         height: 100vh;
         display: grid;
         grid-template-columns: 100px 900px;
@@ -904,16 +926,14 @@ textarea{
     
     .bell-icon{
        width: 3em;  
+       margin-left: 350px;
 
     }
     
-    #Layer_1{
-        margin: 15px 2px 1px 420px;
-      } 
+    
     
     .hr1{
         width:8%;
-        margin-left: 1px;
         transform: rotate(90deg);
        border:.5px solid black;
     }
@@ -1309,6 +1329,8 @@ textarea{
 
     input#userField.form-field{
         width: 100%;
+        height: 4vh;
+        margin-bottom: 29px;
     }
     
     button#send.button-primary{
@@ -1355,11 +1377,11 @@ textarea{
     }
 
  textarea{
-     height: 104px;
+     height: 90px;
  }
 
     h3{
-        font-size: 30px;
+        font-size: 22px;
     }
 
 
