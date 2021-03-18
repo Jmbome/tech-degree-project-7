@@ -1,6 +1,21 @@
 var ctx = document.getElementById('traffic-chart').getContext('2d');
 
-
+let trafficOptions = {
+    aspectRatio: 2.5,
+    animation: {
+      duration: 0
+    },
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    },
+    legend: {
+      display: false
+    }
+  };
 
 var chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -40,10 +55,7 @@ var chart = new Chart(ctx, {
     },
 
     // Configuration options go here
-    options: {
-    
-    
-    }
+    options: trafficOptions
 });
 
 var ctx = document.getElementById('mobile-chart').getContext('2d');
@@ -72,3 +84,20 @@ var chart = new Chart(ctx, {
     
     }
 }); 
+
+
+const alertBanner = document.getElementById("alert");
+// create the html for the banner
+alertBanner.innerHTML =
+`
+<div class="alert-banner">
+<p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
+to complete</p>
+<p class="alert-banner-close">x</p>
+</div>
+`
+
+alertBanner.addEventListener('click', e => {
+  const element = e.target;
+  if (element.classList.contains("alert-banner-close")) {
+  alert.style.display = "none"}

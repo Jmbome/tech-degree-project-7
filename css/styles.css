@@ -9,13 +9,6 @@ body{
 }
 
 
-.grid-container{
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 57px 70px 1fr;
-
-}
 
 
 
@@ -23,15 +16,9 @@ h2{
     font-size: 15px;
 }
   .one{
-    
-    background-color:aqua;
     display:flex;
-    flex-direction: row;
     align-items: center;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    height: 10vh;
-
+    
 } 
 
 #title{
@@ -49,7 +36,7 @@ h2{
 
 
 .hr1{
-    width:10%;
+    
     margin-right: 5px;
     transform: rotate(90deg);
    border:.5px solid black;
@@ -69,12 +56,52 @@ h2{
 }
 
 
+canvas {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+}
+
+.grid-container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 1fr;
+
+}
+
+.bell-icon {
+    padding-top: 10px;
+}
+
+.one-right {
+    display: flex;
+    align-items: center;
+}
+
 .profile-pic{
-   width:12%;
+   
     border-radius: 50%;
     margin-right: 5px;
 } 
 
+.social-image svg {
+    width: 40px;
+    height: 40px;
+}
+
+.twitter {
+    padding-top: 5px;
+}
 
 /*Nav buttons styling*/
 
@@ -83,7 +110,7 @@ h2{
     flex-direction: row;
     align-items: center;
     background-color:rgb(144, 180, 211);
-
+    justify-content: center;
 }
 
 .nav-btn1{
@@ -166,13 +193,7 @@ button{
 
 
 .chart-container{
-    
-    display:flex;
-flex-direction: column;  
-    margin-top: 23px;
-    align-items: center;
-    
-
+    margin-top: 25px;
 } 
 
 
@@ -183,15 +204,10 @@ flex-direction: column;
 }
 
 
- .hr2{
+.hr2{
     margin-top: 20px;
 }
 
-
-.hr3{
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 
 
 .social-container{
@@ -243,43 +259,33 @@ flex-direction: column;
   margin: 15px 2px 1px 1px;
 } 
 
-
+.members-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
 
 /*New member Styling*/
 
-  .members-text{
- margin-left: 20px;
+
+.profile-image,
+.profile-image2 {
+    width: 75px;
+    height: 75px;
 }
 
 
 .profile-image{
     border-radius: 50%;
-    margin-left: 90px
 
 }
 
 .members-text{
-    font-size: 11px;
+    font-size: 16px;
 }
 
-.p1-1{
-    font-size: 14px;
-    margin-left: 80px;
-}
-
-a{
-    margin-left: 58px;
-}
-
-.p2{
-    margin-left: 38%;
-    font-size: 13px;
-}
-
-.p2-1{
-    margin-left: 37%;
-    font-size: 13px;
-}   
 
 /*Recent Activity styling */
 
@@ -287,25 +293,19 @@ a{
 
 
 .active-p{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
-    margin-left: 30px;
 
 }
 .active-p2{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
-    margin-left: 28px;
 
 }
 
-.active-h2{
-  margin-left: 35%;
-}
 
 .profile-image2{
     border-radius: 50%;
-    margin-left: 90px;
 
 }
 
@@ -314,10 +314,7 @@ a{
 
   }
 
-  .p1-2{
-    font-size: 14px;
-    margin-left: 95px;
-}
+
 
 
 
@@ -362,7 +359,7 @@ textarea{
 /*****************************/
 /****************************/
 
-/* @media query Minwidth 768 */
+/* @media query min-width 768 */
 
 @media(min-width:768px){
     
@@ -383,7 +380,7 @@ textarea{
 
  .grid-container{
      grid-template-columns: 80px 1fr;
-     grid-template-rows: 102px 1fr;
+     grid-template-rows: 80px 1fr;
      grid-template-areas:
      "head head"
      "nav main";
@@ -409,11 +406,6 @@ textarea{
         font-size: 8px;
     }
     
-    .bell-icon{
-       width: 2.5em;  
-       margin-left: 300px;
-
-    }
     
     .hr1{
         
@@ -447,7 +439,7 @@ textarea{
         flex-direction: row;
         grid-template-rows:80px 80px 80px 80px ;
         background-color:rgb(144, 180, 211);
-    
+        justify-content: center;
     
     }
     
@@ -480,31 +472,29 @@ textarea{
      .main-header{
         display:flex;
         flex-direction: row;  
-        
+        margin-left: 13px;
        
     }
 
 
     .headline{
         font-size: 15px;
-        margin-top: 38px;
     }
     
     .main-header-search{
         margin-top: 20px;
         display:flex;
         flex-direction:row;
-        margin-left: 9px;
-        
+        margin-left: 148px;        
     }
     
     input{
         border-radius: 8px;
-        height: 5vh;
         border: 2px solid black;
         margin-right: 5px;
-        width: 48vh;
         margin-bottom: 25px;
+        margin-left: 98%;
+    
     }
 
     button{
@@ -512,16 +502,11 @@ textarea{
      height: 28px;
      border-radius: 8px;
      color: white;
-     margin-top: 10px;
     } 
      
     
     
     /*chart styling */
-    
-     #traffic-chart{
-        width: 200%;
-    }
     
      .traffic-nav{
         display:flex;
@@ -541,14 +526,7 @@ textarea{
     }
     
     
-    .chart-container{
-        display:flex;
-    flex-direction: column;  
-        font-size: 10px;
-        margin-top: 25px;
-        align-items: center;        
     
-    } 
 
     .two-charts{
         display: grid;
@@ -569,10 +547,11 @@ textarea{
         margin-top: 10px;
         margin-bottom: 20px;
     }
-    .hr2{
-        display: none;
-    } 
-    
+   
+    .hr3 {
+        width: 100%;
+        margin: 0 auto;
+    }
     /*Social STATS styling*/
 
     
@@ -587,16 +566,12 @@ textarea{
     
     
     .hr2{
-        width:70%;
+       
         margin-top: 20px;
     }
     
     
-    .hr3{
-        width:80%;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
+    
     
     
     .social-container{
@@ -609,17 +584,7 @@ textarea{
         border-radius: 8px;
     }
     
-    .social-image svg {
-        width: 40px;
-        height: 40px;
-    }
 
-
-    .Layer_2{
-        width: 50px;
-        margin-top: 20px;
-        margin-left: 14px;
-    }
 
      
     
@@ -647,54 +612,36 @@ textarea{
     
     /*New member Styling*/
 
-     .members{
-        border-bottom: 2px solid grey;
-    }
-    
+   
     .members-container{
         display: flex;
         flex-direction: row;
-        margin-bottom: 30px;
+        align-items: center;
+        padding: 30px;
+        text-align: left;
+        
 
     }
 
-
-     .members-text{
-     margin-left: 20px;
-     margin-top: 30px;
-    }
-    
     
     .profile-image{
-        width: 18%;
         border-radius: 50%;
-        margin-left: 30px;
-    
     }
-    
-    .members-text{
-        font-size: 13px;
-    }
-    
-    .p1-1{
-        font-size: 14px;
-        margin-left: 90px;
-        margin-bottom: 1px;
-    }
-    
-    
-    .p2{
-        margin-left: 20%;
-        font-size: 13px;
-        margin-top: 50px;
-    }
-    
-    .p2-1{
-        margin-left: 10px;
-        font-size: 17px;
-        margin-top: 1px;
 
-    }  
+    .profile-image,
+    .profile-image2 {
+        margin-right: 30px;
+    }
+
+    .active-p,
+    .active-p2 {
+        font-size: 16px;
+    }
+
+    .p2 {
+        margin-left: auto;
+    }
+
     
     /*Recent Activity styling */
 
@@ -715,26 +662,7 @@ textarea{
 
      }
 
-    .active-h{
-        margin-top: 10px;
-    }
-
     
-    .active-p{
-        font-size: 16px;
-        font-weight: bold;
-        white-space: nowrap;
-        margin-top: 40px;
-        margin-left:10px;
-    }
-
-
-    .active-p2{
-       font-size: 14px;
-       font-weight: bold;
-       margin-top: 40px;
-       margin-left: 12px;
-    }
     
 
     .active-h2{
@@ -745,10 +673,7 @@ textarea{
     }
     
     .profile-image2{
-        width: 19%;
         border-radius: 50%;
-        margin-left: 20px;
-    
     }
     
     .active-h3{
@@ -757,14 +682,9 @@ textarea{
     
       }
     
-      .p1-2{
-        font-size: 14px;
-        margin-left: 25px;
-        margin-bottom: 1px;
-    }
+     
     
     .active-section{
-        margin-right: 20px;
         border-bottom: 2px solid grey;
         margin-bottom: 10px;
     }  
@@ -826,16 +746,15 @@ textarea{
 
 
 
-/*@media query minwidth 1024 */
+/*@media query min-width 1024 */
 /*                          */
 /*                         */
 
  @media(min-width:1024px){
 
-
     .grid-container{
         grid-template-columns: 85px 1fr;
-        grid-template-rows: 135px 1fr;
+        grid-template-rows: 85px 1fr;
 
     }
  
@@ -848,16 +767,9 @@ textarea{
         font-size: 15px;
     }
     
-    .bell-icon{
-       width: 3em;  
-       margin-left: 350px;
-
-    }
-    
-    
-    
+  
     .hr1{
-        width:8%;
+       
         transform: rotate(90deg);
        border:.5px solid black;
     }
@@ -879,10 +791,7 @@ textarea{
     
     
     .profile-pic{
-       width:9%;
-        border-radius: 50%;
-        margin-right: 4%;
-        
+        border-radius: 50%;   
     } 
     
     
@@ -890,54 +799,19 @@ textarea{
     
     /*dashboard search bar styling*/
     
-      .main-header{
-        display:flex;
-        flex-direction: row;  
-        margin-left: 20px;
-    }
-
-
-    .headline{
-        font-size: 30px;
-        margin-top: 49px;
-    }
-    
-    .main-header-search{
-        margin-top: 35px;
-        display:flex;
-        flex-direction:row;
-        margin-left: 9px;
-        
-    }
-    
-    input{
-        border-radius: 8px;
-        height: 5vh;
-        border: 2px solid black;
-        margin-right: 5px;
-        width: 40vh;
-        margin-bottom: 25px;
-    }
-
-    button{
-     background-color:rgb(144, 180, 211);
-     height: 40px;
-     border-radius: 8px;
-     color: white;
-     margin-top: 10px;
-     font-size: 25px;
-    } 
-    
     #alert{
         font-size: 40px;
     } 
     
-    
-    /*chart styling */
-    
-     #traffic-chart{
-        width: 200%;
+    .main-header-search{
+        margin-left: 350px;
     }
+
+    .headline {
+        font-size: 25px;
+    }
+    /*chart styling */
+
     
      .traffic-nav{
         display:flex;
@@ -957,14 +831,6 @@ textarea{
     }
     
     
-    .chart-container{
-        display:flex;
-    flex-direction: column;  
-        font-size: 25px;
-        margin-top: 25px;
-        align-items: center;        
-    
-    } 
 
     .two-charts{
         display: grid;
@@ -1003,15 +869,12 @@ textarea{
     
     .p1-1{
         font-size: 30px;
-        margin-left: 12px;
-        margin-bottom: 1px;
     }
     
    
     .p2 {
         font-size: 28px;
     }
-
 
     /*Recent Activity styling */
 
@@ -1034,22 +897,10 @@ textarea{
 
     
     
-    .active-p{
-        font-size: 28px;
-        font-weight: bold;
-        white-space: nowrap;
-        margin-top: 40px;
-        margin-left:10px;
-    }
-
-
-    .active-p2{
-       font-size: 28px;
-       font-weight: bold;
-       margin-top: 40px;
-       margin-left: 12px;
-    }
     
+    .all-activities {
+        padding: 10px;
+    }
 
     .active-h2{
         white-space: nowrap;
@@ -1058,12 +909,26 @@ textarea{
         font-size: 30px;
     
     }
-    
+    .hr3 {
+        width: 90%;
+    }
     .profile-image2{
-        width: 19%;
         border-radius: 50%;
-        margin-left: 20px;
     
+    }
+
+    .profile-image, .profile-image2 {
+        margin-right: 20px;
+    }
+    
+
+    .members-container {
+        padding: 30px 20px;
+    }
+
+    .members .members-container:last-child,
+    .active-section .members-container:last-child {
+        padding-bottom: 10px;
     }
     
     .active-h3{
@@ -1075,16 +940,18 @@ textarea{
     
       .p1-2{
         font-size: 30px;
-        margin-left: 25px;
         margin-bottom: 1px;
     }
     
     .active-section{
-        margin-right: 20px;
         margin-bottom: 10px;
         border: none;
     }  
-    
+
+.message-settings {
+    padding-top: 30px;
+}    
+   
     /*Message User styling */
     
       .message-h{
@@ -1093,13 +960,13 @@ textarea{
     }
 
     input#userField.form-field{
-        width: 96%;
-        height: 4vh;
-        margin-bottom: 29px;
+        width: 94%;
+        margin-bottom: 28px;
+        height: 40px;
     }
     
     button#send.button-primary{
-        height: 60px;
+        height: 50px;
     }
 
     .widget-container{
@@ -1109,8 +976,8 @@ textarea{
     
     textarea{
         height: 80px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 1px;
+        margin-bottom: 1px;
         border: 2px solid black;
         border-radius: 8px;
     } 
@@ -1118,7 +985,7 @@ textarea{
 
     .all-activities{
         display: flex;
-        border-bottom: 1px solid;
+        border-bottom: 2px solid;
     }
     .members,
     .active-section {
@@ -1128,13 +995,15 @@ textarea{
     .active-section *{
         font-size: 14px;
     }
-    .members img,
-    .active-section img {
-        width: 50px;
-        height: 50px;
-    } 
 
+    .message-settings {
+        display: flex;
 
+    }
+.message,
+.settings {
 
+    flex-basis: 50%;
+}
 
 }
